@@ -2,16 +2,7 @@ prefixes = 'JKLMNOPQ'
 suffix = 'ack'
 
 for letter in prefixes:
-    if(letter == 'O' or letter == 'Q'):
-      print(letter + 'u' + suffix)
+    if(letter not in 'OQ'):
+      print(letter + suffix)   
     else:
-      print(letter + suffix)
-
-
-
-
-for letter in prefixes:
-    if(letter == 'O' or letter == 'Q'):
-      print(letter + 'u' + suffix)
-    else:
-      print(letter + suffix)
+      print(letter + 'k' + suffix)
